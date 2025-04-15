@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b78m66qm4sf6g"]
+
+[node name="Mountain" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 638.0
+offset_bottom = 360.0
