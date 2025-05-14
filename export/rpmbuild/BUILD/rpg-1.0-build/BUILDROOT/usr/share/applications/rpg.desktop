@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Your RPG Game
-Comment=A game created with Godot Engine
-Exec=/usr/share/rpg/RPG.x86_64
-Icon=/usr/share/rpg/icon.png
-Categories=Game;

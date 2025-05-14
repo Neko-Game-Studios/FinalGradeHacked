@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --pink: #f8e1e7;
+    --light-green: #a8d5ba;
+    --light-blue: #a1c9f1;
+    --lime: #cdebb0;
+    --orange: #f5a97f;
+    --black: #0d0d0d;
+    --dark-grey: #1f1f1f;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --white: #f8f8f2;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+.bg-main {
+    background-color: var(--black);
+    color: var(--white);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.second {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+.accent {
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+.button {
+    background-color: var(--cyan);
+    color: var(--black);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--cyan);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--green);
+    box-shadow: 0 0 15px var(--green);
+    transform: scale(1.05);
+}
+
+input,
+textarea {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    border: 2px solid var(--cyan);
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition:
+        border 0.3s,
+        box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 8px var(--green);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.a {
+    background-color: var(--cyan);
+    color: var(--black);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--cyan);
+    cursor: pointer;
+}
+
+.a:hover {
+    background-color: var(--green);
+    box-shadow: 0 0 15px var(--green);
+    transform: scale(1.05);
+}
+
+.red {
+    background-color: #e78284;
+    color: var(--black);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #e78284;
+    cursor: pointer;
+}
+
+.red:hover {
+    background-color: var(--green);
+    box-shadow: 0 0 15px var(--green);
+    transform: scale(1.05);
+}
