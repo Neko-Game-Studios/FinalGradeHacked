@@ -45,7 +45,7 @@ function Ende() {
               <p className="mb-4">React, TypeScript, Tailwind CSS, Vite</p>
 
               <h3 className="text-xl font-bold mb-2">Git</h3>
-              <a href="https://github.com/johannSo/WebTextAdventure" className="underline">github.com/johannSo/WebTextAdventure</a>
+              <a href="https://github.com/Neko-Game-Studios/FinalGradeHacked" className="underline">github.com/Neko-Game-Studios/FinalGradeHacked</a>
             </div>
             
             <div className="mt-6">
