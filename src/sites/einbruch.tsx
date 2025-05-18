@@ -1,3 +1,4 @@
+import { Laptop } from "lucide";
 import { Global } from "../global.ts";
 
 function Einbruch() {
@@ -11,7 +12,7 @@ function Einbruch() {
     );
   };
   const c = () => {
-    Global.deathmsg = "Du hast verckackt (Verübergehender text)";
+    Global.deathmsg = "Du nimmst den Laptop mit und versuchst ihn zu knacken...\nAber der Lehrer checkt die Überwachungsanlage!\nDie Polizei wird gerufen, du wirst verhaftet!\nDu bekommst einen Schulverweis und bleibst sitzen."
     window.location.href = "/txtadv/#/gameover";
   };
 
